@@ -1,0 +1,320 @@
+@import "bourbon/bourbon"
+
+
+/*Шапка*/
+.top_header
+	min-height: 44px
+	background-color: #181e2a
+	line-height: 44px
+	padding: 0 77px 0 97px
+
+.contacts_top
+	display: inline-block
+	min-width: 210px
+	.phone,
+	.email
+		font-family: "Proxima Nova Semibold", sans-serif
+		font-size: 15px
+		color: #f7f7fb
+	.phone
+		margin-right: 64px
+	.phone:before,
+	.email:before
+		content: ''
+		display: inline-block
+		position: relative
+		width: 22px
+		height: 22px
+		top: 7px
+		right: 26px
+		background-image: url("../img/Phone-top.png")
+		background-repeat: no-repeat
+		background-size: contain
+	.email:before
+		background-image: url("../img/Post-top.png")
+
+.social_top
+	display: inline-block
+	float: right
+	padding-top: 8px
+	max-height: 44px
+	.instagram,
+	.facebook
+		display: inline-block
+		line-height: 44px
+		width: 23px
+		height: 23px
+		background-image: url("../img/Instagram-top.png")
+		background-repeat: no-repeat
+		background-size: contain
+		outline: none
+	.facebook
+		margin-left: 9px
+		background-image: url("../img/Facebook-top.png")
+
+.top_section
+	position: relative
+	background-color: #ffffff;
+	background-image: url("../img/11_1.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	height: 100vh
+	@media screen and (min-width: 1280px)
+		height: 1080px
+	.wrapper
+		float: right
+
+
+.logo
+	display: block
+	position: relative
+	background-image: url("../img/logo.png")
+	background-repeat: no-repeat
+	width: 207px
+	height: 54px
+	margin-top: 46px
+	margin-left: 70px
+	float: left
+	outline: none
+
+
+.call
+	display: block
+	position: absolute
+	background-image: url("../img/Phone-call-button.png")
+	background-repeat: no-repeat
+	width: 145px
+	height: 145px
+	top: 65vh
+	right: 38px
+
+.top_nav
+	margin-top: 40px
+	ul,
+	li
+		margin: 0
+		padding: 0
+		list-style: none
+	li
+		display: inline-block
+		a
+			font-size: 26px
+			font-family: "Proxima Nova Regular", sans-serif
+			color: #f7f7fb
+			outline: none
+		a:hover
+			color: #830909
+	li:nth-child(1)
+		margin-right: 48px
+	li:nth-child(2)
+		margin-right: 55px
+	li:nth-child(3)
+		margin-right: 51px
+	li:nth-child(4)
+		margin-right: 78px
+	li.active
+		a
+			color: #830909
+
+.callback
+	float: right
+	position: relative
+	margin-right: 75px
+	margin-top: 36px
+	background-color: #26bb26
+	width: 300px
+	height: 46px
+	font-family: "Proxima Nova Regular", sans-serif
+	font-size: 25px
+	color: #fcfafa
+	border: none
+	border-radius: 10px
+	span:before
+		content: ''
+		display: inline-block
+		position: relative
+		width: 22px
+		height: 22px
+		top: 3px
+		right: 17px
+		background-image: url("../img/Phone-top.png")
+		background-repeat: no-repeat
+		background-size: contain
+
+/*Гарантии*/
+
+.guarantees
+	h2
+		font-size: 30px
+		font-family: "Proxima Nova Regular", sans-serif
+		color: #050505
+		strong
+			color: #b81d18
+	p
+		font-size: 18px
+		font-family: "Proxima Nova Light", sans-serif
+		color: #000
+	h3
+		font-size: 18px
+		font-family: "Proxima Nova Regular", sans-serif
+		color: #b81d18
+
+
+.roads
+	padding: 37px 2% 68px 9.5%
+	//flex-grow: 1
+	h2
+		margin-bottom: 36px
+	h3
+		margin-top: 13%
+		//margin-left: -120px
+		margin-bottom: 51px
+		text-align: center
+
+.services
+	display: flex
+	width: 100%
+	justify-content: space-between
+	//text-align: justify
+	//text-justify: inter-word
+	span
+		display: inline-block
+		font-size: 18px
+		font-family: "Proxima Nova Light", sans-serif
+		color: #040404
+		text-align: center
+		vertical-align: top
+	span:before
+		content: ''
+		position: relative
+		display: block
+		width: 56px
+		height: 56px
+		//margin-right: 4%
+		background-image: url("../img/servises.png")
+		background-repeat: no-repeat
+		margin-bottom: 25px
+	span:nth-child(1):before
+		right: -52px
+	span:nth-child(2):before
+		background-position: -56px 0
+		right: -57px
+	span:nth-child(3):before
+		background-position: -112px 0
+		width: 75px
+		right: -50px
+	span:nth-child(4):before
+		background-position: -187px 0
+		width: 75px
+		right: -49px
+	span:last-child
+		margin-right: 0
+
+.bg_1,
+.bg_2
+	min-height: 84vh
+	background-image: url("../img/44.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	background-attachment: relative
+	//@media screen and (max-width: 768px)
+		//min-height: 84vh
+
+.bg_2
+	background-image: url("../img/55.jpg")
+
+.our_guarantees
+	position: relative
+	padding: 4.5% 5% 1.8% 8.9%
+	h2
+		margin-bottom: 80px
+	ul,
+	li
+		margin: 0
+		padding: 0
+		list-style: none
+	li
+		display: inline-block
+		margin-top: -120px
+		margin-bottom: 45px
+		h3
+			font-size: 15px
+		p
+			position: relative
+			font-size: 15px
+	li:before
+		content: ''
+		position: relative
+		display: inline-block
+		width: 50px
+		height: 59px
+		right: 15%
+		top: 120px
+		background-image: url("../img/guarantees.png")
+		background-repeat: no-repeat
+		margin-bottom: 50px
+	li:nth-child(2):before
+		background-position: -49px 0
+		width: 61px
+		top: 140px
+	li:nth-child(3):before
+		background-position: -109px 0
+		width: 59px
+		top: 140px
+
+/*Секция Ваши права и обязанности*/
+.you_rights
+	background-color: #181e2a
+	min-height: 100vh
+	.align_center
+		margin-bottom: 80px
+	h2
+		margin-top: 67px
+		margin-bottom: 70px
+		text-align: center
+		font-size: 32px
+		font-family: "Proxima Nova Regular", sans-serif
+		color: #b81d18
+	span
+		display: inline-block
+		font-size: 15px
+		text-align: center
+		font-family: "Proxima Nova Light", sans-serif
+		color: #fff
+	span:before
+		content: ''
+		position: relative
+		//float: left
+		//margin-top: 50px
+		margin-bottom: 40px
+		display: block
+		width: 157px
+		height: 61px
+		left: 50%
+		margin-left: -78px
+		//top: 120px
+		bottom: 8px
+		background-image: url("../img/rights.png")
+		background-repeat: no-repeat
+	.rights_icon1:before
+		margin-bottom: 65px
+	.rights_icon2:before
+		background-position: 0 -60px
+		height: 90px
+	.rights_icon3:before
+		background-position: 0 -150px
+		height: 89px
+	.rights_icon4:before
+		background-position: 0 -240px
+		height: 87px
+	.rights_icon5:before
+		background-position: 0 -327px
+		height: 87px
+	.rights_icon6:before
+		background-position: 0 -414px
+		height: 90px
+
+.align_center
+	text-align: center
+	vertical-align: top
