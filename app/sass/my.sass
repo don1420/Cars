@@ -1,8 +1,17 @@
 @import "bourbon/bourbon"
 
+//.clearfix:after
+//	content: "."
+//	visibility: hidden
+//	display: block
+//	height: 0
+//	clear: both
+body
+	font-size: 32px  //32px
+
 /*Шапка*/
 .top_header
-	min-height: 43px
+	min-height: 0.022vw
 	background-color: #181e2a
 	line-height: 40px
 	padding: 0 77px 0 83px
@@ -14,12 +23,11 @@
 	.phone,
 	.email
 		font-family: "Proxima Nova Semibold", sans-serif
-		font-size: 15px
+		font-size: 0.49em//15px
 		color: #f7f7fb
 	.phone
 		display: block
 		float: left
-		word-spacing: 1px
 		margin-top: 4px
 		margin-right: 61px
 	.email
@@ -28,7 +36,6 @@
 		word-spacing: 1px
 		margin-top: 2px
 		margin-right: 61px
-		letter-spacing: 0.4px
 	.phone:before,
 	.email:before
 		content: ''
@@ -53,20 +60,20 @@
 .social_top
 	display: block
 	float: right
-	padding-top: 9px
+	padding-top: 1px
 	max-height: 44px
 	.instagram,
 	.facebook
 		display: inline-block
 		line-height: 44px
-		width: 21px
-		height: 21px
+		width: 20px
+		height: 20px
 		background-image: url("../img/Instagram-top.png")
 		background-repeat: no-repeat
 		background-size: contain
 		outline: none
 	.facebook
-		margin-left: 11px
+		margin-left: 8px
 		background-image: url("../img/Facebook-top.png")
 
 .top_section
@@ -75,7 +82,7 @@
 	background-image: url("../img/11_1.jpg")
 	background-repeat: no-repeat
 	background-size: cover
-	height: 120vh
+	min-height: 56vw
 	//@media screen and (max-width: 1280px)
 		//height: 80vh
 	.wrapper
@@ -162,538 +169,28 @@
 		background-repeat: no-repeat
 		background-size: contain
 
-/*Гарантии*/
-
-.guarantees
-	h2
-		font-size: 30px
-		font-family: "Proxima Nova Regular", sans-serif
-		color: #050505
-		strong
-			color: #b81d18
-	p
-		font-size: 18px
-		font-family: "Proxima Nova Light", sans-serif
-		color: #000
-		padding-left: 2px
-		letter-spacing: 0.5px
-		line-height: 24px
-		padding-right: 42px
-	h3
-		font-size: 18px
-		font-family: "Proxima Nova Regular", sans-serif
-		color: #b81d18
-
-.guarantees-flex-container
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	align-items: stretch
-	flex-wrap: wrap
-	.guarantees-flex-item
-		flex-basis: 50%
-
-.roads
-	//padding: 37px 2% 68px 9.5%
-	//@media screen and (max-width: 1280px)
-		//padding-right: 20px
-	//@media screen and (max-width: 360px)
-		//padding: 15px
-	margin-top: 59px
-	margin-left: 19%
-	h2
-		margin-bottom: 29px
-		line-height: 47px
-		letter-spacing: 0.3px
-		padding-right: 12%
 
 
-.services
-	//display: flex
-	//width: 100%
-	//justify-content: space-between
-	margin-bottom: 44px
-	margin-left: 16%
-	h3
-		margin-top: 109px
-		padding-left: 22.5%
-		margin-bottom: 51px
-		letter-spacing: 0.1px
-	//@media screen and (max-width: 1200px)
-		//display: inline-block
-		//text-align: center
-	//text-align: justify
-	//text-justify: inter-word
-	span
-		display: inline-block
-		font-size: 18px
-		font-family: "Proxima Nova Light", sans-serif
-		color: #040404
-		text-align: center
-		vertical-align: top
-		margin-bottom: 25px
-		margin-right: 10.2%
-		line-height: 25px
-		letter-spacing: 0.3px
-	span:before
-		content: ''
+
+
+
+.ratio
+		width: 100% /* здесь можно установить любую нужную ширину */
+
+.ratio-inner
 		position: relative
-		display: block
-		width: 56px
-		height: 56px
-		background-image: url("../img/servises.png")
-		background-repeat: no-repeat
-		margin-bottom: 36px
-	span:nth-child(2)
-		padding-left: 3px
-	span:nth-child(2):before
-		background-position: 0 0
-		right: -22px
-	span:nth-child(3)
-		margin-top: -9px
-	span:nth-child(3):before
-		background-position: -56px 0
-		top: 9px
-		right: -24px
-	span:nth-child(4)
-		margin-top: -8px
-	span:nth-child(4):before
-		background-position: -112px 0
-		width: 75px
-		right: -23px
-		top: 8px
-	span:last-child
-		margin-right: 0
-		margin-top: -8px
-		padding-left: 3px
-	span:last-child:before
-		background-position: -187px 0
-		width: 75px
-		right: -30px
-		top: 8px
+		height: 0
+		border: none
 
-.bg_1,
-.bg_2
-	height: 100%
-	//min-height: 84vh
-	background-image: url("../img/44.jpg")
-	background-repeat: no-repeat
-	background-size: cover
-	background-position: center center
-	background-attachment: relative
-	//@media screen and (max-width: 768px)
-		//max-height: 84vh
+.ratio-content
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: #eee
 
-.bg_2
-	background-image: url("../img/55.jpg")
+.ratio-4-3
+		padding-top: 75% /* 100% ширины делим на 4 и умножаем на 3 */
 
-.our_guarantees
-	position: relative
-	padding: 9.0% 0 70px 3%
-	h2
-		margin-bottom: 79px
-		padding-left: 15%
-	ul,
-	li
-		margin: 0
-		padding: 0
-		list-style: none
-	li
-		display: inline-block
-		margin-bottom: 35px
-		background-repeat: no-repeat
-		background-position: 44px 22px
-		//padding-left: 15%
-		padding-left: 139px
-		padding-right: 15px
-		h3
-			font-size: 15px
-			margin-bottom: 0
-		p
-			position: relative
-			padding: 0
-			margin-top: 7px
-			font-size: 15px
-			word-spacing: -0.5px
-	li:nth-child(1)
-		background-image: url("../img/euro.png")
-	li:nth-child(2)
-		background-image: url("../img/auction.png")
-		background-position: 44px 23px
-		margin-bottom: 46px
-	li:nth-child(3)
-		background-image: url("../img/hand-holding-up-a-key.png")
-
-
-.you-rights
-	background-color: #181e2a
-	padding-bottom: 50px
-	h2
-		margin: 0
-		padding-top: 59px
-		padding-bottom: 47px
-		text-align: center
-		font-size: 32px
-		font-family: "Proxima Nova Regular", sans-serif
-		color: #b81d18
-		letter-spacing: 0.5px
-		word-spacing: -1.3px
-	.you-rights-flex-container
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
-		display: flex
-		flex-wrap: wrap
-		justify-content: space-between
-		.you-rights-flex-items
-			flex-basis: 33.33333%
-			margin-bottom: 52px
-		.you-rights-flex-items:nth-child(1)
-			text-align: right
-			padding-right: 3.8%
-		.you-rights-flex-items:nth-child(2)
-			text-align: center
-		.you-rights-flex-items:nth-child(3)
-			text-align: left
-			padding-left: 3.4%
-		.you-rights-flex-items:nth-child(4)
-			text-align: right
-			padding-right: 3.8%
-		.you-rights-flex-items:nth-child(5)
-			text-align: center
-		.you-rights-flex-items:nth-child(6)
-			text-align: left
-			padding-left: 5.2%
-	.callback
-		float: none
-		display: block
-		margin: -5px auto
-		margin-bottom: 0
-
-	span[class^="rights_icon"]
-		display: inline-block
-		font-size: 15px
-		min-height: 64px
-		padding-top: 127px
-		letter-spacing: 0.4px
-		line-height: 23px
-		font-family: "Proxima Nova Light", sans-serif
-		background-repeat: no-repeat
-		color: #fff
-		text-align: center
-	.rights_icon1
-		background-image: url("../img/car-icon.png")
-		background-position: 61px 16px
-	.rights_icon2
-		background-image: url("../img/dollar-icon.png")
-		background-position: 108px 0
-	.rights_icon3
-		background-image: url("../img/placeholder-icon.png")
-		background-position: 107px 0
-	.rights_icon4
-		background-image: url("../img/work-briefcase-icon.png")
-		background-position: 78px 5px
-	.rights_icon5
-		background-image: url("../img/clock-icon.png")
-		background-position: 94px 4px
-	.rights_icon6
-		background-image: url("../img/file-icon.png")
-		background-position: 67px 5px
-	
-
-/*Наши клиенты*/
-.clients
-	background-color: #730401
-	padding-bottom: 28px
-	ul,
-	li
-		margin: 0
-		padding: 0
-		list-style: none
-	ul
-		text-align: center
-		letter-spacing: 0
-		font-size: 0
-	li
-		display: inline-block
-		margin-right: 5px
-		margin-left: 5px
-		margin-bottom: 8px
-		img
-			width: 100%
-	li:nth-child(1)
-		padding-top: 3px
-	li:nth-child(2)
-		padding-top: 2px
-	li:nth-child(3)
-		padding-top: 2px
-		margin-right: 0
-	li:nth-child(5)
-		padding-top: 2px
-	li:nth-child(6)
-		padding-top: 2px
-		margin-right: 0
-	h2
-		margin: 0
-		padding-top: 57px
-		padding-bottom: 45px
-		text-align: center
-		font-size: 32px
-		font-family: "Proxima Nova Regular", sans-serif
-		color: #fff
-	a
-		display: block
-		width: 250px
-		margin: 0 auto
-		margin-top: 19px
-		padding: 0 51px
-		font-family: "Proxima Nova Light", sans-serif
-		font-size: 15px
-		color: #fff
-		background-image: url("../img/next-arrow.png")
-		background-repeat: no-repeat
-		background-position: 212px 4px
-		letter-spacing: 0.4px
-
-
-
-
-/*Наша команда*/
-.team
-	text-align: center
-	background-color: #fff
-	padding-bottom: 54px
-	h2
-		margin: 0
-		padding-top: 56px
-		text-align: center
-		font-size: 32px
-		letter-spacing: 0.2px
-		font-family: "Proxima Nova Regular", sans-serif
-		color: #b81d18
-	ul,
-	li
-		margin: 0
-		padding: 0
-		list-style: none
-	ul
-		margin-top: 56px
-	li
-		display: inline-block
-		width: 33%
-		img
-			max-width: 404px
-			width: 100%
-		span
-			display: block
-			text-align: center
-			font-faily: "Proxima Nova Light", sans-serif
-			font-size: 32px
-			color: #131313
-	li:nth-child(1)
-		text-align: right
-		padding-right: 6px
-		margin-bottom: 31px
-		span
-			padding-left: 35%
-			padding-top: 19px
-	li:nth-child(2)
-		text-align: center
-		margin-bottom: 31px
-		span
-			padding-top: 19px
-			padding-right: 7px
-	li:nth-child(3)
-		text-align: left
-		padding-left: 3px
-		margin-bottom: 31px
-		span
-			padding-right: 36%
-			padding-top: 19px
-	li:nth-child(4)
-		text-align: right
-		padding-right: 6px
-		span
-			padding-left: 35%
-			padding-top: 19px
-	li:nth-child(5)
-		text-align: center
-		padding-right: 3px
-		span
-			padding-top: 19px
-	li:nth-child(6)
-		text-align: left
-		padding-left: 3px
-		span
-			padding-right: 36%
-			padding-top: 19px
-
-
-.digits
-	text-align: center
-	background-color: #181e2a
-	padding-bottom: 80px
-	h2
-		padding-top: 78px
-		padding-bottom: 60px
-		padding-left: 89px
-		margin: 0
-		text-align: center
-		font-size: 32px
-		font-family: "Proxima Nova Regular", sans-serif
-		color: #b81d18
-		letter-spacing: 0.4px
-		word-spacing: 0.1px
-	.digits-container
-		max-width: 1410px
-		margin: 0 auto
-	.item-wrap
-		float: left
-		width: 25%
-		p
-			font-size: 31px
-			font-family: "Proxima Nova Light", sans-serif
-			color: #b81d18
-			margin: 0
-			padding-top: 28px
-			letter-spacing: 0.7px
-			line-height: 31px
-		.item
-			font-family: Open Sans, sans-serif
-			font-size: 70px
-			color: #b81d18
-	.item-wrap:nth-child(2)
-		padding-left: 7.2%
-	.item-wrap:nth-child(3)
-		padding-left: 5.2%
-	.item-wrap:nth-child(4)
-		padding-right: 1.5%
-
-.contacts
-	text-align: center
-	background-color: grey
-	padding-bottom: 51px
-	.contacts-container
-		padding-left: 10.6%
-	h2
-		margin: 0
-		padding-top: 45px
-		padding-bottom: 53px
-		text-align: center
-		font-size: 32px
-		font-family: "Proxima Nova Regular", sans-serif
-		color: #b81d18
-	.callback
-		display: block
-		width: 100%
-		float: none
-		margin: 0
-		font-size: 33px
-		letter-spacing: 0.7px
-		height: 65px
-		span::before
-			width: 31px
-			height: 31px
-			right: 25px
-			top: 3px
-	input
-		display: block
-		width: 100%
-		background-color: transparent
-		border: 2px solid #fff
-		font-family: "Proxima Nova Semibold", sans-serif
-		font-size: 19px
-		color: #fcfafa
-		margin-bottom: 40px
-		line-height: 48px
-		padding: 0 11px
-	input::-webkit-input-placeholder
-		color:#fcfafa
-	input::-moz-placeholder
-		color:#fcfafa
-	.form-wrap
-		float: left
-		max-width: 585px
-		width: 35%
-		border: 2px solid #fff
-		padding: 24px 45px 41px 41px
-		h3
-			margin: 0
-			font-family: "Proxima Nova Bold", sans-serif
-			font-size: 48px
-			color: #fffefe
-			line-height: 48px
-			word-spacing: 3px
-			padding-bottom: 28px
-	.map
-		float: right
-		width: 65%
-		padding-left: 34px
-		overflow: 
-		img
-			max-width: 896px
-			width: 100%
-		p
-			position: relative
-			font-family: "Proxima Nova Light", sans-serif
-			font-size: 18px
-			color: #fff
-			text-align: left
-			padding-left: 71px
-			letter-spacing: 0.5px;
-			margin-left: 10px
-		p:before
-			content: ''
-			position: absolute
-			display: block
-			left: 9px
-			top: 0px
-		.adress
-			margin-top: -9px
-			padding-top: 4px
-			margin-bottom: 27px
-		.adress:before	
-			width: 21px
-			height: 30px
-			background-image: url("../img/placeholder-icon-red.png")
-		.email
-			margin-bottom: 30px
-		.email:before
-			width: 28px
-			height: 20px
-			background-image: url("../img/post.png")
-			left: 5px
-			top: 5px
-		.phone
-			span
-				display: block
-				float: left
-			span:first-child
-				margin-right: 13.4%
-		.phone:before
-			width: 28px
-			height: 28px
-			background-image: url("../img/Phone-red.png")
-			left: 6px
-			top: -2px
-		.map-img
-			padding-top: 10px
-			text-align: left
-			padding-right: 34px
-
-
-
-
-
-//font-family: "Proxima Nova Light", sans-serif
-//font-size: 18px
-//color: #fff
-
-
-		//font-size: 26px
-		//font-family: "Proxima Nova Regular", sans-serif
-		//color: #040404
-
+@import "media" // Всегда в конце
